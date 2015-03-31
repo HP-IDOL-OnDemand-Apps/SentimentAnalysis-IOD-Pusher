@@ -1,0 +1,101 @@
+.hideShowMailSentMsg {
+  display : none;
+}
+
+.mailInputField {
+  display : none;
+}
+
+.hideSentMailArea {
+  display : none;
+}
+
+#hideSentMailArea {
+  margin-left : 5px;
+}
+
+.learnmore {
+  padding-top :20px;
+}
+
+.submitArea {
+  padding-top : 15px;
+}
+
+.errorMsg {
+  display : none;
+}
+
+.hideSpinner {
+  display : none;
+}
+
+.transcript {
+  display : none;
+}
+
+#conceptBtn {
+	margin-right : 5px;
+}
+
+#sendSMSBtn {
+  margin-right : 5px;
+}
+
+#sendMailBtn {
+  margin-top : 5px;
+}
+
+.hideSendSmsBtn {
+   display : none;
+ }
+
+.hideSendMailBtn {
+  display : none;
+}
+
+#chat-widget {
+	margin-bottom : 10px;
+}
+
+.chat_area {
+	position : absolute;
+	bottom : 0;
+	right : 0;
+}
+
+.hide_chat {
+  display : none;
+}
+
+#message {
+  height:200px;
+  overflow-y: auto;
+}
+.powered_by {
+  position : absolute;
+  bottom : 20px;
+}
+
+#msgBtn {
+  margin-top : 5px;
+  margin-left : 5px;
+}
+
+#fileInputArea {
+  height : 40px;
+  line-height : 30px;
+}
+
+.powered_by {
+  margin-left : 5px;
+}
+
+/*
+Radial progress styles
+*/
+.progress-meter text {
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}

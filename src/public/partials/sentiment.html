@@ -1,0 +1,63 @@
+<div class="container learnmore">
+  <div class="row">
+      <div class="row">
+        <div class="page-header">
+          <h1>Transcription</h1>
+        </div>
+      </div>
+      
+      <!-- show error area -->
+      <div class="row">
+        <div class="alert alert-danger errorMsg" role="alert" id="errorMsg"> 
+          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+          <span class="sr-only">Error in fetching data</span>
+        </div>
+      </div>
+
+      <!-- transcript area -->
+      <div class="row">
+        <div class="alert alert-info" id="transcriptWrapper">
+          <ul class="fa-ul" id="hideSpinner">
+            <li><i class="fa-li fa fa-spinner fa-spin"></i> Making API request...</li>
+          </ul>
+          <div id="transcript" class="transcript">...</div>
+          <div class="submitArea transcript" id="buttonArea">
+            <button class="btn btn-primary pull-right" id="sentimentBtn" data-ng-click="getSentiment()" data-toggle="modal" data-target="#mySentimentModal">Get sentiment</button>
+          </div>
+        </div>  
+      </div>
+                        
+      <!-- Sentiment Modal -->
+      <div class="modal fade" id="mySentimentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Aggregate Sentiment</h4>
+            </div>
+            <div class="modal-body well" id="aggregateSentiment">
+              Just a moment...
+            </div>
+            
+            <!-- Radial chart -->
+            <div id="content" style="background-color: #4F4F4F">
+              
+            </div>
+            <div class="modal-footer">
+                <!-- <button class="btn btn-primary pull-left hideSendSmsBtn" id="sendSMSBtn" data-ng-click="sendSMS()">Send sms</button>
+                -->
+                <!-- show mail being sent message -->
+                <div class="row pull-left hideShowMailSentMsg" id="hideShowMailSentMsg">
+                  <div class="alert alert-success" role="alert">You mail will be arriving shortly.</div>
+                </div>
+                
+                <div class="row pull-left" id="hideSentMailArea">
+                  <input class="form-control mailInputField" id="mailInputField" placeholder="Please provide a valid mail id" data-ng-model="email_id">
+                  <button class="btn btn-primary hideSendMailBtn" id="sendMailBtn" data-ng-click="sendMail()">Send mail</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

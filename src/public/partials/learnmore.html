@@ -1,0 +1,24 @@
+<div class="container learnmore">
+  <div class="row">
+      <div class="row">
+        <div class="page-header">
+          <h1>Enter media file URL<small> e.g., https://floating-fjord-3615.herokuapp.com/raw/sample.mp3</small></h1>
+        </div>
+      </div>
+      
+      <!-- submit area -->
+      <div class="row">
+        <div class="alert alert-danger errorMsg" role="alert" id="errorMsg">
+          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+          <span class="sr-only">Error:</span>
+          Please provide a valid media file(mp3/mp4/etc) file
+        </div>
+        <input class="form-control" placeholder="Please provide a valid media file(mp3/mp4/etc)" data-ng-model="fileURL" data-ng-focus="clearError()" id="fileInputArea">
+      </div>
+      <div class="row submitArea">
+        <div class=".col-md-6">
+          <button class="btn btn-primary pull-right" id="submitBtn" data-ng-click="getTranscript()">Get transcript</button>
+        </div>
+      </div>
+  </div>
+</div>
